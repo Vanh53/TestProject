@@ -4,6 +4,12 @@
 - Liệt kê các kết nối: Git remote -v
 ![alt text](image-2.png)
 
+- Chuyển đổi giữa HTTPS và SSH: git remote set-url
+    - Từ HTTPS chuyển sang SSH
+    ![alt text](image-9.png)
+    - Từ SSH chuyển sang HTTPS
+    ![alt text](image-10.png)
+
 - Ghi lại những thay đổi: Git commit -m “create file README.md”
 ![alt text](image-3.png)
 
@@ -15,3 +21,21 @@
 
 - Đẩy dữ liệu từ nhánh hiện tại lên kho lưu trữ từ xa: git push origin master
 ![alt text](image-6.png)
+
+- 
+
+### SSH và HTTPS
+- Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
+![alt text](image-7.png)
+
+- In nội dung khóa ra màn hình: cat ~/.ssh/id_ed25519.pub
+![alt text](image-8.png)
+
+# 4 vùng làm việc
+1. vùng làm việc (Working directory) là vùng người dùng thực hiện code
+
+2. vùng chờ (Staging area) là vùng lưu dữ liệu thay đổi (thêm vào bằng add)
+
+3. kho lưu trữ cục bộ (local repository) để lưu dữ liệu trên máy (thêm vào bằng commit)
+
+4. kho lưu trữ từ xa (github, ... ) để lưu dữ liệu từ xa (thực hiện với push)
