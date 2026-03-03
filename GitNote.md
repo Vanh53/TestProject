@@ -55,7 +55,10 @@
 - Xóa nhánh: git branch -d nhanh2
         ![alt text](image-18.png)
 
-### SSH và HTTPS
+- Đưa file trở về trạng thái commit gần nhất: git checkout -- GitNote.md
+    ![alt text](image-19.png)
+
+# SSH và HTTPS
 - Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
 ![alt text](image-7.png)
 
@@ -80,5 +83,5 @@ Git stash, stash apply, stash pop, stash list
 
 Git reset, reset soft, reset hard, mixed
 
+-- lúc trước
 
-git checkout -- <file>: Discard local changes to a specific file.
