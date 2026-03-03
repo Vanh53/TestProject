@@ -1,1 +1,1 @@
-"# GitNote" 
+# GitNote
