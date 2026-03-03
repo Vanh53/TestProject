@@ -50,8 +50,10 @@
         ![alt text](image-17.png)
     - Muốn thay đổi từ commit trước -> tạo nhánh mới: git checkout -b ten-nhanh 373a95c
 
+- Đẩy dữ liệu lên kho lưu trữ từ xa và ghi đè (ghi đè tất cả commit trên kho lưu trữ từ xa thành commit trên máy cục bộ): git push --force origin master
 
-
+- Xóa nhánh: git branch -d nhanh2
+        ![alt text](image-18.png)
 
 ### SSH và HTTPS
 - Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
@@ -69,10 +71,14 @@
 
 4. kho lưu trữ từ xa (github, ... ) để lưu dữ liệu từ xa (thực hiện với push)
 
+
+---
  fetch, pull
 Git merge, pull from another branch, merge fast forward vs no-ff vs merge squash
-Git checkout, checkout branch, checkout revision, 
-Git stash, stash apply, stash pop
 
-Git reset, reset soft, reset hard
-Git push force
+Git stash, stash apply, stash pop, stash list
+
+Git reset, reset soft, reset hard, mixed
+
+
+git checkout -- <file>: Discard local changes to a specific file.
