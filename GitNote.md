@@ -46,11 +46,11 @@
         ![alt text](image-15.png)
 
 - Đưa thư mục làm việc (Working directory) trở về trạng thái của 1 commit nhất định: git checkout <revision>
-    - Ví dụ: 
+    - Ví dụ: git checkout 373a95c
+        ![alt text](image-17.png)
+    - Muốn thay đổi từ commit trước -> tạo nhánh mới: git checkout -b ten-nhanh 373a95c
 
 
-- Lúc trước
-- Lúc sau
 
 
 ### SSH và HTTPS
