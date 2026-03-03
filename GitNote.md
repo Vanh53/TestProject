@@ -14,12 +14,11 @@
 
 - Đưa thay đổi vào vùng chờ staging:
     - Thêm 1 file: git add README.md
-
-    ![alt text](image-12.png)
-
+        <br>
+       ![alt text](image-12.png)
     - Thêm tất cả thay đổi: git add .
-    
-    ![alt text](image-11.png)
+        <br>
+        ![alt text](image-11.png)
 
 - Ghi lại những thay đổi: Git commit -m “create file README.md”
 ![alt text](image-3.png)
@@ -30,10 +29,28 @@
 - Chuyển sang nhánh khác: git checkout master
 ![alt text](image-5.png)
 
+- Xem danh sách nhánh: git branch
+        ![alt text](image-16.png)
+
 - Đẩy dữ liệu từ nhánh hiện tại lên kho lưu trữ từ xa: git push origin master
 ![alt text](image-6.png)
 
-- 
+- Sử dụng -h hoặc --help để tìm hiểu thêm về 1 lệnh cụ thể
+        Ví dụ: 
+            ![alt text](image-13.png)
+
+- Hiển thị danh sách các commit: git log
+        ![alt text](image-14.png)
+
+- Hiển thị danh sách commit, mỗi commit trên 1 dòng: git log --oneline
+        ![alt text](image-15.png)
+
+- Đưa thư mục làm việc (Working directory) trở về trạng thái của 1 commit nhất định: git checkout <revision>
+    - Ví dụ: 
+
+
+- Lúc trước
+
 
 ### SSH và HTTPS
 - Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
@@ -50,3 +67,11 @@
 3. kho lưu trữ cục bộ (local repository) để lưu dữ liệu trên máy (thêm vào bằng commit)
 
 4. kho lưu trữ từ xa (github, ... ) để lưu dữ liệu từ xa (thực hiện với push)
+
+ fetch, pull
+Git merge, pull from another branch, merge fast forward vs no-ff vs merge squash
+Git checkout, checkout branch, checkout revision, 
+Git stash, stash apply, stash pop
+
+Git reset, reset soft, reset hard
+Git push force
