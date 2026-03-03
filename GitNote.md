@@ -29,4 +29,11 @@ print(2)
 
 ![Day la anh meo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqAV5R3xXbzr4pYcPPilBQ9HSNTkKaDrk9g2cQjlpLsrt6FJj0a_rTYAc&s)
 
+12. Danh sach khong co thu tu
+
+- Muc 1
+- Muc 2
+    - Muc 2.1
+    - Muc 2.2
+
 
