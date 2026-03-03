@@ -6,8 +6,8 @@
 
 - Chuyển đổi giữa HTTPS và SSH: git remote set-url
     - Từ HTTPS chuyển sang SSH 
-    <br>
-    ![alt text](image-9.png)
+        <br>
+        ![alt text](image-9.png)
     - Từ SSH chuyển sang HTTPS
     ![alt text](image-10.png)
 
