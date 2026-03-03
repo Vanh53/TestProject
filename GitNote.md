@@ -5,10 +5,17 @@
 ![alt text](image-2.png)
 
 - Chuyển đổi giữa HTTPS và SSH: git remote set-url
-    - Từ HTTPS chuyển sang SSH
+    - Từ HTTPS chuyển sang SSH 
+    <br>
     ![alt text](image-9.png)
     - Từ SSH chuyển sang HTTPS
     ![alt text](image-10.png)
+
+- Đưa thay đổi vào vùng chờ staging:
+    - Thêm 1 file: git add README.md
+    ![alt text](image-12.png)
+    - Thêm tất cả thay đổi: git add .
+    ![alt text](image-11.png)
 
 - Ghi lại những thay đổi: Git commit -m “create file README.md”
 ![alt text](image-3.png)
