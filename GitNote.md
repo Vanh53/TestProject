@@ -94,11 +94,8 @@
 
 ---
 
-Git merge, pull from another branch, merge fast forward vs no-ff vs merge squash
+merge fast forward vs no-ff vs merge squash
 
 
 Git reset, reset soft, reset hard, mixed
-
--- lúc trước
--- lúc sau
 
