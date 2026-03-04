@@ -75,6 +75,33 @@
 
 - Kéo code từ nhánh khác trên local -> thực hiện merge
 
+- Fast-forward Merge
+    - Cú pháp: git merge <ten-nhanh>
+    - Merge mà không tạo commit mới
+
+- No Fast-forward Merge 
+    - Cú pháp: git merge --no-ff <ten-nhanh>.
+    - Merge có tạo commit để ghi lại lịch sử gộp 2 nhánh
+
+- Squash Merge
+    - Cú pháp: git merge --squash <ten-nhanh>.
+    - Lấy toàn bộ commit trên nhánh phụ, nên lại và tạo thành 1 commit trên nhánh chính
+
+- Git Reset --soft:
+    - Cú pháp: git reset --soft <commit-id>
+    - Chỉ di chuyển con trỏ HEAD về commit cũ, vùng staging và working không thay đổi
+    - Dùng khi muốn thay đổi nội dung của commit
+
+- Git Reset --hard:
+    - Cú pháp: git reset --hard <commit-id>
+    - Đưa toàn bộ HEAD, vùng Staging và thư mục làm việc về y hệt trạng thái của commit cũ
+    - Dùng khi code lỗi, reset lại toàn bộ
+
+- Git Reset --mixed (mặc định):
+    - Cú pháp: git reset --mixed <commit-id>
+    - Di chuyển HEAD và cập nhật lại vùng Staging Area giống với commit cũ, vùng làm việc giữ nguyên
+    - Dùng khi muốn thay đổi các file đã add
+
 # SSH và HTTPS
 - Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
 ![alt text](image-7.png)
@@ -92,13 +119,5 @@
 4. kho lưu trữ từ xa (github, ... ) để lưu dữ liệu từ xa (thực hiện với push)
 
 
----
-
-Git merge, pull from another branch, merge fast forward vs no-ff vs merge squash
-
-
-Git reset, reset soft, reset hard, mixed
-
--- lúc trước
--- lúc sau
+....
 
