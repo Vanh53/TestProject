@@ -58,6 +58,13 @@
 - Đưa file trở về trạng thái commit gần nhất: git checkout -- GitNote.md
     ![alt text](image-19.png)
 
+- Lưu lại những thay đổi để chuyển nhánh mà không cần commit, đưa vào danh sách: git stash
+    - Lưu lại tất cả: git stash -u (kể cả các file untracked chưa được add hoặc commit)
+
+- Lấy 1 trạng thái từ đầu danh sách và xóa nó khỏi danh sách: git stash pop
+- Làm trống danh sách stash: git stash clear
+- Xem danh sách stash: git stash list
+
 # SSH và HTTPS
 - Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
 ![alt text](image-7.png)
@@ -79,9 +86,10 @@
  fetch, pull
 Git merge, pull from another branch, merge fast forward vs no-ff vs merge squash
 
-Git stash, stash apply, stash pop, stash list
 
 Git reset, reset soft, reset hard, mixed
 
 -- lúc trước
+
+-- lúc sau
 
