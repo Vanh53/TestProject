@@ -65,6 +65,16 @@
 - Làm trống danh sách stash: git stash clear
 - Xem danh sách stash: git stash list
 
+
+- Kéo dữ liệu từ remote về local một các an toàn: 
+    - git fetch origin master
+    - Xem danh sách các commit trên remote có mà local k có: git log master..origin/master --oneline
+    - Merge thủ công: git merge origin/master
+
+- Kéo dữ liệu từ remote về và tự động merge vào nhánh hiện tại: git pull origin master
+
+- Kéo code từ nhánh khác trên local -> thực hiện merge
+
 # SSH và HTTPS
 - Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
 ![alt text](image-7.png)
@@ -83,13 +93,12 @@
 
 
 ---
- fetch, pull
+
 Git merge, pull from another branch, merge fast forward vs no-ff vs merge squash
 
 
 Git reset, reset soft, reset hard, mixed
 
 -- lúc trước
-day là vanh - anh - đã fix conflict
 -- lúc sau
 
