@@ -4,6 +4,7 @@ String pool, còn chưa có thì sẽ tạo mới
 3. Khi tạo String bằng new, thì JVM sẽ tạo đối tượng String mới trong Heap memory (nằm ngoài String pool), mỗi lần new là mỗi cấp phát một địa chỉ mới
 4. hàm intern() dùng để thêm chuỗi vào String pool
 -> Cơ chế: kiểm tra trong pool, nếu đã tồn tại -> trả về địa chỉ, nếu chưa tồn tại -> tạo mới trong pool và trả về địa chỉ mới
+<br>
 -> Việc dùng string pool sẽ tiết kiệm bộ nhớ hơn
 5. Ví dụ:
 - ### String Literal và String Object
@@ -39,6 +40,9 @@ Dùng equals sẽ so sánh giá trị nên trả về 2 giá trị true, dùng =
     System.out.println(a == d);
   ```
 
--> Kết quả: true
+-> Kết quả: 
+  ```java
+  true
+  ```
 
 -> Giải thích: hàm intern() sẽ đưa string vào string pool và trả về địa chỉ cho d
