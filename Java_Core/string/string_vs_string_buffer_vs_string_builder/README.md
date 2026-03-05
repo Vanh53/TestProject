@@ -3,6 +3,7 @@
 -> Khi thực hiện cắt, nối chuỗi thì sẽ tạo ra hoặc trả về chuỗi mới
 
 Ví dụ:
+
     ```java
     public static void main(String[] args) {
         String s = "Vanh";
@@ -20,7 +21,9 @@ Ví dụ:
         return res;
     }    
     ```
+
 -> Kết quả: 
+
     ```java
     hnaV
     Va
@@ -32,7 +35,8 @@ Ví dụ:
 3. StringBuffer có tính đồng bộ hóa và an toàn cho đa luồng, còn StringBuilder thì không
 -> StringBuilder sẽ có tốc độ nhanh hơn, và cả 2 đều có thể thay đổi giá trị
 
-Ví dụ với StringBuilder
+Ví dụ với StringBuilder:
+
     ```java
     System.out.println("----");
     StringBuilder sb = new StringBuilder("Hoang");
@@ -42,6 +46,7 @@ Ví dụ với StringBuilder
     ```
 
 -> Kết quả: 
+
     ```java
     Hoang
     Hoang Anh
