@@ -1,5 +1,6 @@
 ## Tính trừu tượng
-*** Ẩn đi những chi tiết triển khai, chỉ hiển thị phần khung ***
+***Ẩn đi những chi tiết triển khai, chỉ hiển thị phần khung***
+***Lớp con phải triển khai tất cả phương thức trừu tượng của lớp cha***
 1. Abstract class: 
 - Quan hệ IS-A, ví dụ: Hình tròn là một Hình học
 - Là một class, dùng từ khóa extends
