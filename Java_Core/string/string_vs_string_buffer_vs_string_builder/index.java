@@ -4,10 +4,17 @@ import java.util.GregorianCalendar;
 public class index {
     public static void main(String[] args) {
         String s = "Vanh";
-
         String res = daoNguoc(s);
         System.out.println(res);
+        String sub = s.substring(0,2);
+        System.out.println(sub);
+        System.out.println(s);
 
+        System.out.println("----");
+        StringBuilder sb = new StringBuilder("Hoang");
+        System.out.println(sb.toString());
+        sb.append(" Anh");
+        System.out.println(sb.toString());
     }
 
     public static String daoNguoc (String s) {
