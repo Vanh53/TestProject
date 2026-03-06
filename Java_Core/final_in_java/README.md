@@ -1,5 +1,5 @@
 ## Final trong java
-1. Final variable
+1. **Final variable**
 - Biến được khai báo là final sẽ chỉ được gán giá trị một lần duy nhất, không thể thay đổi sau khi gán
 
 Ví dụ:
@@ -64,7 +64,7 @@ Ví dụ:
 ```java
 public static final double PI = 3.14;
 ```
-2. Final Method
+2. **Final Method**
 - Các phương thức được đánh dấu là final không thể bị ghi đè.
 - Ví dụ:
 ```java
@@ -79,7 +79,8 @@ class DongVat {
 }
 ```
 -> Lớp con không thể ghi đè nhayNhot()
-3. Final Class
+
+3. **Final Class**
 - Một lớp được khai báo là final thì lớp khác sẽ không thể kế thừa được nó, các phương thức bên trong lớp final cũng mặc định là final
 - Ví dụ:
 ```java
