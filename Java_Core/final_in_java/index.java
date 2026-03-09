@@ -10,15 +10,15 @@ final class DongVat {
     }
 }
 
-class Cho extends DongVat {
-    public Cho (String ten) {
-        super(ten);
-    }
-    @Override
-    public void nhayNhot() {
-        System.out.println(ten + " nhay day!");
-    }
-}
+//class Cho extends DongVat {
+//    public Cho (String ten) {
+//        super(ten);
+//    }
+//    @Override
+//    public void nhayNhot() {
+//        System.out.println(ten + " nhay day!");
+//    }
+//}
 
 final class Meo {
     private String mau;
