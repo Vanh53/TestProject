@@ -66,6 +66,7 @@ class Student {
 ```
 -> Giải thích: phương thức sound() là static nên sẽ được tạo lúc biên dịch, lúc này chưa có đối tượng nào của class, 
 nên this.name lúc này chưa tồn tại
+
 3. **A static block**
 - Là đoạn khối mã sử dụng từ khóa static và bọc trong {}
 - Dùng để khởi tạo giá trị cho các biến tĩnh
