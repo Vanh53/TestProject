@@ -102,3 +102,27 @@ public class index {
 15.0
 5.0
 ```
+5. EnumSet và EnumMap
+- EnumSet:
+  - Tốc độ add, remove, constains xấp xỉ O(1)
+  - Thứ tự là thứ tự khai báo
+  - Ví dụ:
+```java
+EnumSet<Day> workingDays = EnumSet.of(Day.MONDAY, Day.TUESDAY, Day.WEDNESDAY, Day.THURSDAY, Day.FRIDAY);
+
+if (workingDays.contains(Day.SATURDAY)) {
+    System.out.println("Đi làm thôi!");
+}
+```
+- EnumMap:
+  - Tốc độ gần bằng tốc độ truy cập mảng
+  - Thứ tự là thứ tự khai báo, không cho phép key null
+  - Ví dụ:
+```java
+EnumMap<OrderStatus, Integer> report = new EnumMap<>(OrderStatus.class);
+
+report.put(OrderStatus.PENDING, 10);
+report.put(OrderStatus.SHIPPED, 5);
+
+System.out.println("Đang chờ: " + report.get(OrderStatus.PENDING));
+```
