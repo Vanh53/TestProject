@@ -1,14 +1,26 @@
 package handle_exception;
 
+class CustomException extends Exception {
+    public CustomException(String message) {
+        super(message);
+    }
+}
+
 public class index {
+
+
     public static void main(String[] args) {
-        kiemTraTuoi(-1);
-    }
-    public static void kiemTraTuoi(int tuoi) {
-        if (tuoi < 0) {
-            // Chủ động ném ra một lỗi
-            throw new IllegalArgumentException("Tuổi không được là số âm!");
+        try {
+            docFile();
+        } catch (CustomException e) {
+            System.out.println("Loi: " + e.getMessage());
         }
-        System.out.println("Tuổi hợp lệ: " + tuoi);
     }
+    public static void docFile() throws CustomException {
+        int a = 1;
+        if (a == 1) {
+            throw new CustomException("Custom exception test!");
+        }
+    }
+
 }
