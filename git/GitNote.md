@@ -5,40 +5,40 @@
 
 - In nội dung khóa ra màn hình: cat ~/.ssh/id_ed25519.pub
     <br>
-    ![alt text](image-8.png)
+    ![alt text](image/image-8.png)
 
 
 - Chuyển đổi giữa HTTPS và SSH: git remote set-url
     - Từ HTTPS chuyển sang SSH 
         <br>
-        ![alt text](image-9.png)
+        ![alt text](image/image-9.png)
     - Từ SSH chuyển sang HTTPS
         <br>
-        ![alt text](image-10.png)
+        ![alt text](image/image-10.png)
 
 2. ## Remote Management
 
 - Liên kết kho lưu trữ **cục bộ** với kho lưu trữ **từ xa**: git remote add origin https://github.com/Vanh53/TestProject.git
     <br>
-    ![alt text](image-1.png)
+    ![alt text](image/image-1.png)
 
 - Liệt kê các kết nối: Git remote -v
     <br>
-    ![alt text](image-2.png)
+    ![alt text](image/image-2.png)
 
 3. ## Regular Workflow
 
 - Đưa thay đổi vào vùng chờ staging:
     - Thêm 1 file: git add README.md
         <br>
-       ![alt text](image-12.png)
+       ![alt text](image/image-12.png)
     - Thêm tất cả thay đổi: git add .
         <br>
-        ![alt text](image-11.png)
+        ![alt text](image/image-11.png)
 
 - Ghi lại những thay đổi: Git commit -m “create file README.md”
     <br>
-    ![alt text](image-3.png)
+    ![alt text](image/image-3.png)
 
 - Kéo dữ liệu từ remote về local một các an toàn: 
     - git fetch origin master
@@ -51,48 +51,48 @@
 
 - Đẩy dữ liệu từ nhánh hiện tại lên kho lưu trữ từ xa: git push origin master
     <br>
-    ![alt text](image-6.png)
+    ![alt text](image/image-6.png)
 
 - Sử dụng -h hoặc --help để tìm hiểu thêm về 1 lệnh cụ thể
     Ví dụ: 
     <br>
-    ![alt text](image-13.png)
+    ![alt text](image/image-13.png)
 
 - Hiển thị danh sách các commit: git log
     <br>
-    ![alt text](image-14.png)
+    ![alt text](image/image-14.png)
 
 - Hiển thị danh sách commit, mỗi commit trên 1 dòng: git log --oneline
     <br>
-    ![alt text](image-15.png)
+    ![alt text](image/image-15.png)
 
 4. ## Branching & Navigation
 
 - Tạo và chuyển sang 1 nhánh mới: git checkout -b nhanh1
     <br>
-    ![alt text](image-4.png)
+    ![alt text](image/image-4.png)
 
 - Chuyển sang nhánh khác: git checkout master
     <br>
-    ![alt text](image-5.png)
+    ![alt text](image/image-5.png)
 
 - Xem danh sách nhánh: git branch
     <br>
-    ![alt text](image-16.png)
+    ![alt text](image/image-16.png)
 
 - Đưa thư mục làm việc (Working directory) trở về trạng thái của 1 commit nhất định: git checkout <revision>
     - Ví dụ: git checkout 373a95c
         <br>
-        ![alt text](image-17.png)
+        ![alt text](image/image-17.png)
     - Muốn thay đổi từ commit trước -> tạo nhánh mới: git checkout -b ten-nhanh 373a95c
 
 - Xóa nhánh: git branch -d nhanh2
     <br>
-    ![alt text](image-18.png)
+    ![alt text](image/image-18.png)
 
 - Đưa file trở về trạng thái commit gần nhất: git checkout -- GitNote.md
     <br>
-    ![alt text](image-19.png)
+    ![alt text](image/image-19.png)
 
 5. ## Merging 
 
