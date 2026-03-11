@@ -35,6 +35,29 @@
 }
 ```
 ## 3. Funtional Interface
+- Lambda chỉ hoạt động với Functional Interface — interface có đúng 1 abstract method.
+- Ví dụ:
+```java
+@FunctionalInterface
+interface Greeting {
+    String greet(String name);
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Greeting formal = name -> "Good morning, " + name + "!";
+        Greeting casual = name -> "Hey " + name + "!";
+
+        System.out.println(formal.greet("Alice"));
+        System.out.println(casual.greet("Bob"));
+    }
+}
+```
+-> Kết quả:
+```java
+Good morning, Alice!
+Hey Bob!
+```
 ## 4. Các funtional interface có sẵn
 ### 4.1 Runnable 
 - Không nhận, không trả về
