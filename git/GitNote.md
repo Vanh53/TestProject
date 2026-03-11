@@ -1,7 +1,7 @@
 1. ## SSH và HTTPS
 - Tạo cặp key-value giữa máy tính và github: ssh-keygen -t ed25519 -C "hoangem05032004@gmail.com"
     <br>
-    ![alt text](image-7.png)
+    ![alt text](image/image-7.png)
 
 - In nội dung khóa ra màn hình: cat ~/.ssh/id_ed25519.pub
     <br>
